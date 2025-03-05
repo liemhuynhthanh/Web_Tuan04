@@ -4,10 +4,58 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <title>Vite + React</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body class="bg-gray-50">
+    <div class="container mx-auto p-8">
+      <header class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-800">Emma Gonzalez's Recipe Box</h1>
+        <button class="bg-pink-500 text-white px-4 py-2 rounded-full">Share</button>
+      </header>
+      <p class="text-gray-600 mb-6">Emma Gonzalez is a deputy editor at Cheffy, bringing her expertise as a former cooking editor at The Los Angeles Times...</p>
+      <nav class="flex space-x-4 mb-6">
+        <button class="text-pink-500 border-b-2 border-pink-500 pb-2">Saved Recipes</button>
+        <button class="text-gray-600">Folders</button>
+        <button class="text-gray-600">Recipes by Genevieve</button>
+      </nav>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="tomato-salad.jpg" alt="Italian-style tomato salad" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold text-gray-800">Italian-style tomato salad</h2>
+            <p class="text-pink-500 text-sm">15 minutes</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="shrimp-spaghetti.jpg" alt="Vegetable and shrimp spaghetti" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold text-gray-800">Vegetable and shrimp spaghetti</h2>
+            <p class="text-pink-500 text-sm">15 minutes</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="lotus-salad.jpg" alt="Lotus delight salad" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold text-gray-800">Lotus delight salad</h2>
+            <p class="text-pink-500 text-sm">20 minutes</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="snack-cakes.jpg" alt="Snack cakes" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold text-gray-800">Snack cakes</h2>
+            <p class="text-pink-500 text-sm">21 minutes</p>
+          </div>
+        </div>
+      </div>
+      <footer class="flex justify-center space-x-2 mt-8">
+        <button class="bg-pink-500 text-white px-3 py-1 rounded-full">1</button>
+        <button class="text-gray-600 px-3 py-1 rounded-full">2</button>
+        <button class="text-gray-600 px-3 py-1 rounded-full">3</button>
+        <button class="text-gray-600 px-3 py-1 rounded-full">...</button>
+        <button class="text-gray-600 px-3 py-1 rounded-full">11</button>
+      </footer>
+    </div>
   </body>
 </html>
